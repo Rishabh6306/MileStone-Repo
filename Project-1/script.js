@@ -8,7 +8,6 @@ const detailsText = document.getElementById('details-text');
 const detailsImage = document.getElementById('details-image');
 const addBtn = document.getElementById('add-btn');
 const cutIconDetails = document.getElementById('cut-icon');
-
 // Retrieve blogs data from localStorage on page load
 const savedBlogs = localStorage.getItem('blogs');
 const blogs = savedBlogs ? JSON.parse(savedBlogs) : [];
