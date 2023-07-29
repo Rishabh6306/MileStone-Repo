@@ -1,7 +1,7 @@
 # Milestone Assignments by PW Skills
 
 ## Introduction
-This repository contains the nMilestone assignments given by PW Skills. In these assignments, we were tasked to create three projects using different technologies.
+This repository contains the Milestone assignments given by PW Skills. In these assignments, we were tasked to create three projects using different technologies.
 
 ## Projects
 
