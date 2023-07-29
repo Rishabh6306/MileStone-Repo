@@ -140,8 +140,8 @@ function handleSingleGrid() {
     const imageElement = imageElements[0];
     if (imageElement) {
       // Set the width of the image to 500px for the first grid
-      imageElement.style.width = '500px';
-      imageElement.style.margin = '0 240px';
+      imageElement.style.width = '270px';
+      imageElement.style.margin = '0px';
     }
   } else if (gridElements.length > 1) {
     // Multiple grid elements are present, reset styles for all images
