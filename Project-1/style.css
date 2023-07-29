@@ -184,7 +184,7 @@ textarea {
 }
 
 @media screen and (max-width: 1050px) {
-#form-container {
-   width: 100%;
-}
+    #form-container {
+        width: 100%;
+    }
 }

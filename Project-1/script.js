@@ -61,7 +61,6 @@ function createBlogElement(blogData) {
     removeBlog(blogContainer);
     handleSingleGrid(); // Call handleSingleGrid after removing a blog
   });
-
   return blogContainer;
 }
 
