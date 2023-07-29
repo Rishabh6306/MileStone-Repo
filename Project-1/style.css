@@ -27,6 +27,7 @@ body {
     border-radius: 12px;
     white-space: wrap;
     word-wrap: break-word;
+    position: relative;
 }
 
 /* Image Designing  */
@@ -34,6 +35,15 @@ img {
     height: 180px;
     width: 100%;
     border-radius: 15px;
+}
+
+.first-grid {
+    width: 100%;
+}
+
+/* Style for the image in all grids except the first grid */
+.grid:not(.first-grid) img {
+    width: 100%;
 }
 
 /* Button Designing for Read */
@@ -135,10 +145,40 @@ textarea {
 }
 
 #cut-icon {
-    font-size: 20px;
+    font-size: 25px;
     color: #2a2727;
     position: absolute;
     top: 10px;
     right: 10px;
     cursor: pointer;
+}
+
+.detail-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: blue;
+    padding: 20px;
+    color: white;
+}
+
+.blog-details p {
+    margin: 30px 0;
+}
+
+.delete-icon {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 2px solid #0000ff;
+    font-size: 12px;
+    cursor: pointer;
+    color: #0040ff;
 }
