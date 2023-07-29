@@ -59,6 +59,13 @@ Todo-WebApp-With-ReactJS/
 
 2. `TodoRemove.jsx`: This component displays a remove button for each task, allowing users to delete tasks.
 
+## Screenshots
+
+Here are a few screenshots of CountryInfo Web App:
+
+![Screenshot 1](./public/Screenshot%20-1.png)
+![Screenshot 1](./public//Screenshot%20-2.png)
+
 ## Contribution
 
 Feel free to contribute to this project by creating pull requests or reporting issues. Let's make task management even better together!
