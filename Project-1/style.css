@@ -25,6 +25,8 @@ body {
     border: 2px solid silver;
     padding: 12px;
     border-radius: 12px;
+    white-space: wrap;
+    word-wrap: break-word;
 }
 
 /* Image Designing  */
@@ -45,7 +47,6 @@ button {
     border: none;
     cursor: pointer;
 }
-
 
 /******************* Add Blog Model **************************/
 

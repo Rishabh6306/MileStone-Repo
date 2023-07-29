@@ -1,11 +1,12 @@
 const formContainer = document.getElementById('form-container');
 formContainer.style.display = 'none';
-
 const gridContainer = document.getElementById('grid-container');
 const blogDetails = document.getElementById('blog-details');
 const detailsTitle = document.getElementById('details-title');
 const detailsDescription = document.getElementById('details-description');
 const detailsText = document.getElementById('details-text');
+const detailsImage = document.getElementById('details-image'); // Added the image element
+
 const addBtn = document.getElementById('add-btn');
 
 // Retrieve blogs data from localStorage on page load
@@ -39,6 +40,8 @@ function createBlogElement(blogData) {
     blogContainer.appendChild(readButton);
 
     readButton.addEventListener('click', function () {
+        // Update the blog details overlay when the "Read" button is clicked
+        detailsImage.src = blogData.imageUrl;
         detailsTitle.innerText = blogData.title;
         detailsDescription.innerText = blogData.description;
         detailsText.innerText = blogData.text;
@@ -48,6 +51,19 @@ function createBlogElement(blogData) {
 
         blogDetails.style.display = 'block';
         document.body.style.overflow = 'hidden';
+
+        // Remove the 'active-blog' class from all blogs
+        const activeBlog = gridContainer.querySelector('.active-blog');
+        if (activeBlog) {
+            activeBlog.classList.remove('active-blog');
+            const activeBlogText = activeBlog.querySelector('p');
+            if (activeBlogText) {
+                activeBlogText.style.display = 'none';
+            }
+        }
+
+        // Mark this blog as the active one
+        blogContainer.classList.add('active-blog');
     });
 
     return blogContainer;
@@ -56,6 +72,15 @@ function createBlogElement(blogData) {
 function hideBlogDetails() {
     blogDetails.style.display = 'none';
     document.body.style.overflow = 'auto'; // Restore the scrolling behavior
+
+    // Hide the text content in the grid after closing the overlay
+    const activeBlog = gridContainer.querySelector('.active-blog');
+    if (activeBlog) {
+        const text = activeBlog.querySelector('p');
+        if (text) {
+            text.style.display = 'none';
+        }
+    }
 }
 
 function toggleFormVisibility(showFormAlways) {
@@ -131,11 +156,11 @@ function loadBlogsFromLocalStorage() {
     }
 
     // After loading blogs, check if there are any blogs to decide whether to show the form.
-    toggleFormVisibility(false); // Pass false to show the form only when there are no blogs.
+    toggleFormVisibility(false); 
 }
 
 // Check if form should be shown based on grids when the page loads
-toggleFormVisibility(false); // Pass false to show the form only when there are no blogs.
+toggleFormVisibility(false); 
 
 // Load blogs from localStorage on page load
 loadBlogsFromLocalStorage();
