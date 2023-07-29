@@ -82,9 +82,9 @@ The application is designed to work on modern web browsers and is responsive for
 
 Here are a few screenshots of CountryInfo Web App:
 
-![Screenshot 1](./Project-1/Screenshots/Screenshot%20-1.png)
-![Screenshot 1](./Project-1/Screenshots/Screenshot%20-2.png)
-![Screenshot 1](./Project-1/Screenshots/Screenshot%20-3.png)
+![Screenshot 1](./Screenshots//Screenshot%20-1.png)
+![Screenshot 1](./Screenshots//Screenshot%20-2.png)
+![Screenshot 1](./Screenshots//Screenshot%20-3.png)
 
 ## Contributing
 
