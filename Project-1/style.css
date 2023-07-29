@@ -182,3 +182,11 @@ textarea {
     cursor: pointer;
     color: #0040ff;
 }
+
+@media screen and (max-width: 1050px) {
+    
+
+#form-container {
+   width: 100%;
+}
+}
