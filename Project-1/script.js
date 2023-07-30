@@ -150,6 +150,32 @@ function handleSingleGrid() {
       imageElement.style.margin = '';
     }
   }
+
+  // Call toggleFormVisibility to show/hide the form based on grids
+  toggleFormVisibility(false);
+}
+
+// Function to handle the single grid scenario
+function handleSingleGrid() {
+  const gridElements = gridContainer.getElementsByClassName('grid');
+  const imageElements = gridContainer.getElementsByTagName('img');
+
+  if (gridElements.length === 1) {
+    // Only one grid element is present
+    const singleGrid = gridElements[0];
+    const imageElement = imageElements[0];
+    if (imageElement) {
+      // Set the width of the image to 500px for the first grid
+      imageElement.style.width = '270px';
+      imageElement.style.margin = '0px';
+    }
+  } else if (gridElements.length > 1) {
+    // Multiple grid elements are present, reset styles for all images
+    for (const imageElement of imageElements) {
+      imageElement.style.width = '';
+      imageElement.style.margin = '';
+    }
+  }
 }
 
 // Function to toggle the visibility of the form
