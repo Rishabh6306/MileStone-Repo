@@ -108,11 +108,9 @@ function hideBlogDetails() {
     }
   }
 }
-
 // Function to handle the removal of a blog
 function removeBlog(blogContainer) {
-  // Find the index of the blog data in the 'blogs' array
-  const blogIndex = blogs.findIndex(blog => blog.title === blogContainer.querySelector('h1').innerText);
+  const blogIndex = Array.from(gridContainer.children).indexOf(blogContainer);
 
   if (blogIndex !== -1) {
     // Remove the blog data from the 'blogs' array
@@ -128,6 +126,7 @@ function removeBlog(blogContainer) {
     handleSingleGrid();
   }
 }
+
 
 // Function to handle the single grid scenario
 function handleSingleGrid() {
