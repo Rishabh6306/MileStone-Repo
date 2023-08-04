@@ -32,13 +32,6 @@ This is a simple web application that allows users to search for movies using th
 2. As you type, the app will instantly display relevant movie search results.
 3. Click on the "Watch Now" button to watch the movie (Note: This button is for demonstration purposes only and does not play the movie).
 
-## Screenshots
-
-Here are a few screenshots of CountryInfo Web App:
-
-![Screenshot 1](./Screenshots/Screenshot-1.png)
-![Screenshot 1](./Screenshots/Screenshot-2.png)
-![Screenshot 1](./Screenshots/Screenshot-3.png)
 
 ## Credits
 1. Open Movie Database (OMDb) API: Provides movie data for the application.
