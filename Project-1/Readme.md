@@ -78,13 +78,6 @@ The application uses local storage to store the added blogs. This means that the
 
 The application is designed to work on modern web browsers and is responsive for different screen sizes, including desktops, tablets, and mobile devices.
 
-## Screenshots
-
-Here are a few screenshots of CountryInfo Web App:
-
-![Screenshot 1](./Screenshots//Screenshot%20-1.png)
-![Screenshot 1](./Screenshots//Screenshot%20-2.png)
-![Screenshot 1](./Screenshots//Screenshot%20-3.png)
 
 ## Contributing
 
